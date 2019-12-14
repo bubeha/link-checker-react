@@ -6,7 +6,9 @@ const NavBar: React.FC = () => {
     <header className="header">
       <div className="container">
         <nav className="nav-bar">
-          <NavLink to="/" className="nav-bar__brand">Brand Name</NavLink>
+          <NavLink to="/" className="nav-bar__brand">
+            <i className="icon-diamond"/>
+          </NavLink>
 
           <ul className="nav-bar__nav nav nav--right">
             <li className="nav__item">

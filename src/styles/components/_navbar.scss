@@ -8,5 +8,6 @@
   &__brand {
     color: $navbar-font-color;
     text-decoration: none;
+    @include rem(font-size, 32);
   }
 }
