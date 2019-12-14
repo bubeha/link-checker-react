@@ -3,16 +3,22 @@ import {NavLink} from 'react-router-dom';
 
 const NavBar: React.FC = () => {
   return (
-    <nav>
-      <div className="nav-wrapper">
-        <div className="container">
-          <NavLink to="/" className="brand-logo">Brand</NavLink>
+    <header className="header">
+      <div className="container">
+        <nav className="nav-bar">
+          <NavLink to="/" className="nav-bar__brand">Brand Name</NavLink>
 
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <ul className="nav-bar__nav nav nav--right">
+            <li className="nav__item">
+              <NavLink to="/login" className="nav__link">Login</NavLink>
+            </li>
+            <li className="nav__item">
+              <NavLink to="/registration" className="nav__item">Sign Up</NavLink>
+            </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 };
 

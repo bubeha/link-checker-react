@@ -1,0 +1,12 @@
+.nav-bar {
+  @include rem(height, 64);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $navbar-font-color;
+
+  &__brand {
+    color: $navbar-font-color;
+    text-decoration: none;
+  }
+}
